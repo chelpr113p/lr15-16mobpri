@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-kapt")
 }
 
 android {
@@ -53,6 +54,12 @@ dependencies {
     // Paging 3
     implementation("androidx.paging:paging-runtime:3.3.5")
     implementation("androidx.paging:paging-compose:3.3.5")
+
+    // Room
+    implementation("androidx.room:room-runtime:2.7.1")
+    implementation("androidx.room:room-ktx:2.7.1")
+    kapt("androidx.room:room-compiler:2.7.1")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
