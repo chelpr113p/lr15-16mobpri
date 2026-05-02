@@ -1,8 +1,8 @@
-package com.example.lr11mobpri.data.model
+package com.example.lr11mobpri.domain.model
 
 data class Post(
-    val userId: Long,
     val id: Long,
+    val userId: Long,
     val title: String,
     val body: String
 )
